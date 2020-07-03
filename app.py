@@ -1,7 +1,11 @@
 #Import dependencies
 from flask import Flask, render_template, request
+<<<<<<< HEAD
 import pickle
 import pandas as pd 
+=======
+import pickle 
+>>>>>>> 685b4a18b8894e41548004d83b1c25f50d04cb62
 
 #Create Flask App
 app = Flask(__name__)
@@ -14,6 +18,7 @@ def index():
 #Read Input and Predict New Value
 @app.route("/predict_temperature/", methods=["POST"])
 def pred_temp():
+<<<<<<< HEAD
     input1 = request.form['input1']
     input2 = request.form['input2']
     input3 = request.form['input3']
@@ -48,6 +53,27 @@ def pred_temp():
     return render_template("index.html", res=round(res[0],2), year=input1, month=input2, day=input3, city=input4)
     # return render_template("index.html", city=(input4[0])
     # return render_template("index.html", res=input1)
+=======
+    # input1 = request.form['input1']
+    # input2 = request.form['input2']
+    # input3 = request.form['input3']
+    # input4 = request.form['input4']
+    # input5 = request.form['input5']
+    # input6 = request.form['input6']
+    # input7 = request.form['input7']
+    input1 = 2030
+    input2 = 11
+    input3 = 1
+    input4 = '12.05'
+    input5 = '14.79'
+    input6 = 1
+    input7 = 1
+    filename = 'Tempregression.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+    res = loaded_model.predict([[input1, input2, input3, input4, input5, input6, input7]])
+    return render_template("index.html", res=round(res[0],2))
+
+>>>>>>> 685b4a18b8894e41548004d83b1c25f50d04cb62
 
 if __name__ == "__main__":
     app.run(debug=True)
