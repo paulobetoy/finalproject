@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <!-- Bootstrap -->
@@ -11,158 +12,114 @@
     <title>Bootcamp Tec | Temperature Prediction</title>
 </head>
 
+<!-- page header -->
 <body>
     <div class="jumbotron text-center">
         <h1 class="display-3">Temperature Prediction</h1>
         <p class="lead">This model will predict the temperature for future years based on a model created with the information from past years.
         </p>
         <hr class="my-2">
-        <p>It uses utility classes for typography and
-            spacing to space content out within the larger container.</p>
-        <!-- <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
-        </p> -->
+        <p>Go and select the Year, Month, Day and City you would like to consult!</p>
     </div>
 
-<<<<<<< HEAD
-    
+<!-- dropdown selectors -->
     <div class="container text-center">
-        <!-- <div class="dropdown-menu"> -->
+
             <form action="/predict_temperature/" method="POST">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Year</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="input1">
-                      <option>--Select Year--</option>
-                      <option>2025</option>
-                      <option>2030</option>
-                      <option>2035</option>
-                      <option>2040</option>
-                      <option>2045</option>
-                      <option>2050</option>
-                    </select>
-                  </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Month</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="input2">
-                      <option>--Select Month--</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                    </select>
-                  </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Day</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="input3">
-                      <option>--Select Day--</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                      <option>13</option>
-                      <option>14</option>
-                      <option>15</option>
-                      <option>16</option>
-                      <option>17</option>
-                      <option>18</option>
-                      <option>19</option>
-                      <option>20</option>
-                      <option>21</option>
-                      <option>22</option>
-                      <option>23</option>
-                      <option>24</option>
-                      <option>25</option>
-                      <option>26</option>
-                      <option>27</option>
-                      <option>28</option>
-                      <option>29</option>
-                      <option>30</option>
-                      <option>31</option>
-                    </select>
-                  </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">City</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="input4">
-                      <option>--Select City--</option>
-                      <option>Acapulco</option>
-                      <option>Abu Dhabi</option>
-                      <option>Amsterdam</option>
-                      <option>Apodoca</option>
-                      <option>Atlanta</option>
-                      <option>Albuquerque</option>
-                      <option>Austin</option>
-                      <option>Acuña</option>
-                      <option>Bangalore</option>
-                      <option>Baltimore</option>
-                      <option>Berlin</option>
-                      <option>Bombay</option>
-                    </select>
-                  </div>
-              <!-- <div class="form-group">
-                <label for="exampleDropdownFormEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-              </div>
               <div class="form-group">
-                <label for="exampleDropdownFormPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                <label for="exampleFormControlSelect1">Year</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="input1">
+                  <option>--Select Year--</option>
+                  <option>2025</option>
+                  <option>2030</option>
+                  <option>2035</option>
+                  <option>2040</option>
+                  <option>2045</option>
+                  <option>2050</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                <label class="form-check-label" for="dropdownCheck">
-                  Remember me
-                </label>
-              </div> -->
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Month</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="input2">
+                  <option>--Select Month--</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Day</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="input3">
+                  <option>--Select Day--</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">City</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="input4">
+                  <option>--Select City--</option>
+                  <option>Acapulco</option>
+                  <option>Abu Dhabi</option>
+                  <option>Amsterdam</option>
+                  <option>Apodoca</option>
+                  <option>Atlanta</option>
+                  <option>Albuquerque</option>
+                  <option>Austin</option>
+                  <option>Acuña</option>
+                  <option>Bangalore</option>
+                  <option>Baltimore</option>
+                  <option>Berlin</option>
+                  <option>Bombay</option>
+                </select>
+              </div>
+
               <button type="submit" class="btn btn-primary">PREDICT</button>
             </form>
-        <!-- </div> -->
+
         <br>
         <h1>Predicted temperature for {{city}} is: {{res}} C° on {{day}}/{{month}}/{{year}}</h1>
     </div>
-
-   
-    <!-- <label for="cars">Choose a car:</label>
-    <select id="cars" name="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
-    </select>
-    <input type="submit"> -->
-  
-  
-=======
-    <div class="container text-center">
-        <form action="/predict_temperature/" method="POST">
-          <input type="text" name="input1">
-          <input type="text" name="input2">
-          <input type="text" name="input3">
-          <input type="text" name="input4">
-          <input type="text" name="input5">
-          <input type="text" name="input6">
-          <input type="text" name="input7">
-          <button name="Button" type="submit">PREDICT</button>
-        </form>
-        <h1>Predicted temperature is: {{res}}</h1>
-    </div>
-    
-
->>>>>>> 685b4a18b8894e41548004d83b1c25f50d04cb62
-
 
 
     <!-- Bootstrap -->
@@ -179,10 +136,6 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 685b4a18b8894e41548004d83b1c25f50d04cb62
 </body>
 
 </html>
